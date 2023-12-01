@@ -75,14 +75,14 @@ public class Main {
 		v5.printData();
 
 		v1.comparePrices(v5);
-		*/
-		
+		 */
+
 		Computer first = new Computer();
 		Computer second = new Computer();
 		Computer third = new Computer();
 		Computer fourth = new Computer();
 		Computer fifth = new Computer();
-		
+
 		Computer[] computers = {first, second, third, fourth, fifth};
 
 		first.setComputer("Intel Core", 9, 4);
@@ -90,24 +90,24 @@ public class Main {
 		third.setComputer("Altair", 2, 2);
 		fourth.setComputer("Celeron", 3.30, 16);
 		fifth.setComputer("AMD", 8.40, 32);
-		
+
 		for (int i = 0; i < computers.length; i++) {
-            computers[i].perfIndexCalc();
-        }
+			computers[i].perfIndexCalc();
+		}
 
-        for (int i = 0; i < computers.length - 1; i++) {
-            for (int j = 0; j < computers.length - 1; j++) {
-                if (computers[j].perfIndexCalc() < computers[j + 1].perfIndexCalc()) {
-                    Computer temp = computers[j];
-                    computers[j] = computers[j + 1];
-                    computers[j + 1] = temp;
-                }
-            }
-        }
+		for (int i = 0; i < computers.length - 1; i++) {
+			for (int j = 0; j < computers.length - 1; j++) {
+				if (computers[j].perfIndexCalc() < computers[j + 1].perfIndexCalc()) {
+					Computer temp = computers[j];
+					computers[j] = computers[j + 1];
+					computers[j + 1] = temp;
+				}
+			}
+		}
 
-        for (int i = 0; i < computers.length; i++) {
-            computers[i].printIndex();
-        }
+		for (int i = 0; i < computers.length; i++) {
+			computers[i].printIndex();
+		}
 
 	}
 
