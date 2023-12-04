@@ -20,7 +20,7 @@ public class ControlStructures {
 				System.out.println("C");
 			}else if (grade == 4) {
 				System.out.println("B");
-			}	else {
+			} else {
 				System.out.println("A");
 			}
 		}
