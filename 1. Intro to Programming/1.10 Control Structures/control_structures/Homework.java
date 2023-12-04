@@ -3,7 +3,7 @@ package control_structures;
 public class Homework {
 
 	public static void main(String[] args) {
-
+		
 		/*
 		// 1.Average students
 
@@ -15,21 +15,20 @@ public class Homework {
 
 
 		do {
-            System.out.print("Enter the number of students on the course (1 - 160), enter 0 when done");
-            prompt = TextIO.getlnInt();
+            		System.out.print("Enter the number of students on the course (1 - 160), enter 0 when done");
+            		prompt = TextIO.getlnInt();
 
-            if (prompt >= 1 && prompt <= 160) {
-                courses++;
-                students += prompt; 
+            		if (prompt >= 1 && prompt <= 160) {
+                		courses++;
+                		students += prompt; 
+		  
+                		System.out.println(students);
+                		System.out.println(courses);
 
-
-                System.out.println(students);
-                System.out.println(courses);
-
-            } else if (prompt != 0) {
-                System.out.println("PLEASE enter a number between 1 and 160");
-            }
-        } while (prompt != 0);
+            		} else if (prompt != 0) {
+	                	System.out.println("PLEASE enter a number between 1 and 160");
+            		}
+        	} while (prompt != 0);
 
 		// Math.round
 		studentsAvg = students / courses;
@@ -47,14 +46,14 @@ public class Homework {
 			n = TextIO.getInt();
 
 			if (n != -1) {
-                if (n < 6 || n > 142) {
-                    System.out.println("Number must be between 6 and 142");
-                } else {
-                    if (n % 7 == 0) {
-                        totalBySeven++;
-                    }
-                }
-            }
+                		if (n < 6 || n > 142) {
+                    			System.out.println("Number must be between 6 and 142");
+                		} else {
+                    			if (n % 7 == 0) {
+                        		totalBySeven++;
+                    			}
+                		}
+            		}
 
 		} while (n != -1);
 
@@ -78,12 +77,12 @@ public class Homework {
 		for (int i = 0; i < n; i++) {
 		    int num = TextIO.getlnInt();
 
-		    if (num < -10 || num > 100) {
-		    	System.out.println("Numbr must be between -10 and 100.");
-		        }
+			if (num < -10 || num > 100) {
+		    		System.out.println("Numbr must be between -10 and 100.");
+			}
 
-		     nums[i] = num;
-		 	}
+		     	nums[i] = num;
+		 }
 
 		int min = nums[0];
 
@@ -91,7 +90,7 @@ public class Homework {
 			if (nums[i] < min) {
 				min = nums[i];
 		    	}
-			}
+		}
 
 		System.out.println("Smallest numbers is " + min);
 		 */
@@ -101,33 +100,33 @@ public class Homework {
 		// 4. Avg grade
 		double average = 0;
 		double total = 0;
-        double numberOfGrades = 0;
-        int grade;
+        	double numberOfGrades = 0;
+        	int grade;
 
 
 
-        do {
-        	System.out.println("Enter grade between 5 and 10 (enter 0 to finish):");
-            grade = TextIO.getInt();
+        	do {
+        		System.out.println("Enter grade between 5 and 10 (enter 0 to finish):");
+           		grade = TextIO.getInt();
 
-            if (grade != 0) {
-            	if (grade < 5 || grade > 10) {
-                	System.out.println("Grade must be between 5 and 10:");
-                } else {
-                	total += grade;
-                	numberOfGrades++;
-                }
-            }
+            		if (grade != 0) {
+            			if (grade < 5 || grade > 10) {
+                			System.out.println("Grade must be between 5 and 10:");
+                		} else {
+                			total += grade;
+                			numberOfGrades++;
+                		}
+            		}
 
-        } while (grade != 0);
+        	} while (grade != 0);
 
-        if (numberOfGrades > 0) {
-        	average = total / numberOfGrades;
-            System.out.println("Average grade is: " + average);
+        	if (numberOfGrades > 0) {
+        		average = total / numberOfGrades;
+            		System.out.println("Average grade is: " + average);
 
-        } else {
-            System.out.println("No valid grades entered");
-        }
+       		} else {
+            		System.out.println("No valid grades entered");
+        	}
 		 */
 
 		/*
