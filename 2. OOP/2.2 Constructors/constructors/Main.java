@@ -2,28 +2,27 @@ package constructors;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {/*
+		Cylinder tube = new Cylinder(2.0f, 200.0f);
+		System.out.println("Radius: " + tube.r + ", height: " + tube.H);
+		*/
+		
 		/*
-		Cylinder cev = new Cylinder(2.0f, 200.0f);
-		System.out.println("Radius: " + cev.r + ", height: " + cev.H);
-		 */
-
-		/*
-		Student first = new Student("Frodo",	"Baggins",	39.5,53.8);
+		Student first = new Student("Frodo",	"Baggins",	39.5, 53.8);
 		Student second = new Student("Samwise", "Gamgee",	38.7, 57.5);
-
+		
 		first.calcAvg();
 		first.printPoints();
 		second.calcAvg();
 		second.printPoints();
-		 */
-
+		*/
+		
 		/*
 		Employees e1 = new Employees("Frodo","Baggins", 3600);
 		Employees e2 = new Employees("Samwise","Gamgee", 3600);
 		Employees e3 = new Employees("Meriadoc","Brandybuck", 3600);
 		Employees e4 = new Employees("Peregrin","Took", 3600);
-
+		
 		e1.calcSalary(22);
 		e1.printEmployee();
 
@@ -35,9 +34,8 @@ public class Main {
 
 		e4.calcSalary(13);
 		e4.printEmployee();
-		 */
-
-
+		*/
+		
 		Vehicle v1 = new Vehicle("Tesla", "El. Sedan", "TSLA-001", 2019, 155 , 480);
 		Vehicle v2 = new Vehicle("Ford", "Truck", "FRD-2023", 2007, 130, 375);
 		Vehicle v3 = new Vehicle("BMW", "SUV", "BMW-X7", 2010, 180, 456);
@@ -55,7 +53,7 @@ public class Main {
 		v3.printData();
 		v4.printData();
 		v5.printData();
-
+		
 		v5.comparePrices(v1);
 	}
 }

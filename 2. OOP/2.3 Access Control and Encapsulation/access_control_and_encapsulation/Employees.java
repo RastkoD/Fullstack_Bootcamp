@@ -2,7 +2,16 @@ package access_control_and_encapsulation;
 
 public class Employees {
 	private String name, surname;
-	private double jobCoef, days;
+	private double jobCoef;
+	int days;
+
+	Employees() {};
+
+	Employees(String n, String s, double jC) {
+		this.name = n;
+		this.surname = s;
+		this.jobCoef = jC;
+	}
 
 	public void setName(String n) {
 		this.name = n;
@@ -12,14 +21,14 @@ public class Employees {
 		this.surname = s;
 	}
 
-	public void setCoef(double c) {
-		this.jobCoef = c;
+	public void setJobCoef(double jC) {
+		this.jobCoef = jC;
 	}
-
-	public void setDays(double d) {
+	
+	public void setDays(int d) {
 		this.days = d;
 	}
-
+	
 	public String getName() {
 		return this.name;
 	}
@@ -28,21 +37,19 @@ public class Employees {
 		return this.surname;
 	}
 
-	public double getCoef() {
+	public double getJobCoef() {
 		return this.jobCoef;
 	}
-
-	public double getDays() {
+	
+	public int getDays() {
 		return this.days;
 	}
 
-	double calcPay() {
-		return this.jobCoef * 100 * this.getDays();
+	double calcSalary() {
+		return getJobCoef() * getDays() * 100;
 	}
 
-	void printPay() {
-		System.out.println("Employee: " + this.getName() + " " + this.getSurname() + " has a salary of: " + this.calcPay());
-
+	void printEmployee() {
+		System.out.println("Employee: " + getName() + " " + getSurname() + " has a salary of: " + calcSalary());
 	}
-
 }

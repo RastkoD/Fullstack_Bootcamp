@@ -2,61 +2,88 @@ package access_control_and_encapsulation;
 
 public class Vehicle {
 	private String brand, type, regPlate;
-	private int year, maxSpeed, power;
-
-	void setVehicle(String b, String t, String rp, int y, int ms, int hp) {
+	private int year, maxSpeed, hPower;
+	
+	Vehicle() {}
+	
+	Vehicle(String b, String t, String rp, int y, int ms, int hp) {
 		this.brand = b;
 		this.type = t;
 		this.regPlate = rp;
 		this.year = y;
 		this.maxSpeed = ms;
-		this.power = hp;
+		this.hPower = hp;
 
 	}
-
-	String getBrand() {
+	
+	public void setBrand(String b) {
+		this.brand = b;
+	}
+	
+	public void setType(String t) {
+		this.type = t;
+	}
+	
+	public void setRegPlate(String rp) {
+		this.regPlate = rp;
+	}
+	
+	public void setYear(int y) {
+		this.year = y;
+	}
+	
+	public void setMaxSpeed(int ms) {
+		this.maxSpeed = ms;
+	}
+	
+	public void setHpower(int hp) {
+		this.hPower = hp;
+	}
+	
+	public String getBrand() {
 		return this.brand;
 	}
-
-	String getType() {
+	
+	public String getType() {
 		return this.type;
 	}
-
-	String getRegPlate() {
+	
+	public String getRegPlate() {
 		return this.regPlate;
 	}
-
-	int getYear() {
+	
+	public int getYear() {
 		return this.year;
 	}
-
-	int getMaxSpeed() {
+	
+	public int getMaxSpeed() {
 		return this.maxSpeed;
 	}
-
-	int getPower() {
-		return this.power;
+	
+	public int getHpower() {
+		return this.hPower;
 	}
-
+	
 	double vehicleValue() {
-		return this.getMaxSpeed() * this.getPower() / (2023 - this.getYear());
+		return getMaxSpeed() * getHpower() / (2023 - getYear());
 	}
-
+	
 	void printData() {
-		System.out.println("Vehicle: " + this.getBrand() + " " + this.getType() + " with reg. plates: " + this.getRegPlate() + ", has a value of: " + this.vehicleValue());
+		System.out.println("Vehicle: " + getBrand() + " " + getType() + " with reg. plates: " + getRegPlate() + ", has a value of: " + vehicleValue());
 	}
 
-	void comparePrices(Vehicle v) {
-		double firstValue = this.vehicleValue();
-		double secondValue = v.vehicleValue();
-
-		if (firstValue < secondValue) {
-			System.out.println("First vehicle is cheaper.");
-		} else if (firstValue > secondValue) {
-			System.out.println("Second vehicle is cheaper.");
+	public void comparePrices(Vehicle v) {
+		double firstPrice = this.vehicleValue();
+		double secondPrice = v.vehicleValue();
+		
+		if (firstPrice > secondPrice) {
+			System.out.println(v.getBrand() + " priced at: " + v.vehicleValue() + " is cheaper than " + this.getBrand() + "(" + this.vehicleValue() + ")");
+		} else if (firstPrice < secondPrice) {
+			System.out.println(this.getBrand() + " priced at: " + this.vehicleValue() + " is cheaper than " + v.getBrand() + "(" + v.vehicleValue() + ")");
 		} else {
-			System.out.println("Vehicles are equal in price.");
+			System.out.println(this.getBrand() + " priced at: " + this.vehicleValue() + " has the same value as " + v.getBrand() + " (" + v.vehicleValue() + ")");
 		}
+		
 	}
-
+	
 }

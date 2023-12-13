@@ -6,10 +6,10 @@ public class Employees {
 	
 	Employees() {};
 	
-	Employees(String n, String s, double jc) {
+	Employees(String n, String s, double jC) {
 		this.name = n;
 		this.surname = s;
-		this.jobCoef = jc;
+		this.jobCoef = jC;
 	}
 	
 	void calcSalary(int days) {

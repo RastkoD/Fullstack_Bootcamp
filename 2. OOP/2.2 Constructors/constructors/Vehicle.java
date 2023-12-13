@@ -24,18 +24,19 @@ public class Vehicle {
 	void printData() {
 		System.out.println("Vehicle: " + brand + " " + type + " with reg. plates: " + regPlate + ", has a value of: " + value);
 	}
-	
-	void comparePrices(Vehicle v) {
-	    double firstValue = this.vehicleValue();
-	    double secondValue = v.vehicleValue();
 
-	    if (firstValue < secondValue) {
-	        System.out.println("First vehicle is cheaper.");
-	    } else if (firstValue > secondValue) {
-	        System.out.println("Second vehicle is cheaper.");
-	    } else {
-	        System.out.println("Vehicles are equal in price.");
-	    }
+	public void comparePrices(Vehicle v) {
+		double firstPrice = this.vehicleValue();
+		double secondPrice = v.vehicleValue();
+		
+		if (firstPrice > secondPrice) {
+			System.out.println(v.brand + " priced at: " + v.vehicleValue() + " is cheaper than " + this.brand + "(" + this.vehicleValue() + ")");
+		} else if (firstPrice < secondPrice) {
+			System.out.println(this.brand + " priced at: " + this.vehicleValue() + " is cheaper than " + v.brand + "(" + v.vehicleValue() + ")");
+		} else {
+			System.out.println(this.brand + " priced at: " + this.vehicleValue() + " has the same value as " + v.brand + " (" + v.vehicleValue() + ")");
+		}
+		
 	}
 	
 }
