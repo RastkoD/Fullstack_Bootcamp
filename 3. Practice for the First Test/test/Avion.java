@@ -1,5 +1,12 @@
 package test1;
 
+/*Napisati apstraktnu klasu Avion koja ima atribute: naziv (tipa String), 
+	vrsta (tipa String) i domet (tipa double); metode za pribavljanje
+	i postavljanje svih atributa (getere i setere), konstruktor kojim se 
+	postavljaju vrednosti svih atributa i apstraktne metode za poletanje i sletanje. 
+	Kod svih atributa i metoda navesti i odgovarajuće pristupne atribute.
+*/	
+
 public abstract class Avion {
 	private String naziv;
 	private String vrsta;
