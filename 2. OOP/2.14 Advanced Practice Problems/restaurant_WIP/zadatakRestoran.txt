@@ -1,0 +1,17 @@
+Program za podršku poslovanju restorana
+• Restorani u svom poslovanju vode evidenciju o zaposlenima,
+klijentima, narudžbinama, jelovniku i namirnicama.
+• Realizovati sledeće funkcionalnosti:
+• Učitavanje podataka o jelovniku, namirnicama i klijentima iz datoteke, kao i
+upis podataka o jelovniku, namirnicama i klijentima u datoteku
+• Dodavanje, brisanje i traženje stavki u jelovniku
+• Dodavanje, brisanje i traženje namirnica
+• Dodavanje, brisanje i traženje klijenta
+• Realizacija narudžbine od strane klijenata
+• Upis podataka o svim narudžbinama u datoteku
+• U test klasi kreirati restoran, učitati podatkeo jelovniku, namirnicama i
+klijentima i kreirati nekoliko narudžbina. Podatke o realizovanim
+narudžbinama upisati u datoteku.
+• PROŠIRENJE 1: Dodati i funkcionalnosti za rad sa zaposlenima.
+• PROŠIRENJE 2: Podržati realizaciju plaćanja za narudžbine povezivanjem
+sa programom za podršku poslovanju banaka.

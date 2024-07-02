@@ -1,0 +1,78 @@
+Nacrtati ER konceptualnu šemu baze podataka AUTOSKOLA, na osnovu tekstualnog opisa realnih 
+entiteta i njihovih odnosa i identifikovanog skupa obeležja. Tekstualni opis:
+
+· Zaposleni se klasifikuju na instruktore vožnje i administrativce. 
+   Zaposleni mora biti ili instruktor vožnje ili administrativac, a može imati i obe uloge. 
+   Svaki zaposleni se jedinstveno identifikuje preko svog jedinstvenog matičnog broja. 
+   Klasifikacija zaposlenih se vrši na osnovu obeležja katzap.
+
+· Među zaposlenima postoji hijerarhija rukovođenja. Jedan zaposleni može da ima 
+   nijednog ili jednog direktnog rukovodioca, a jedan rukovodilac može da rukovodi sa više zaposlenih, 
+   a ne mora ni sa jednim.
+
+· Kategoriji vozila mora pripadati najmanje jedan tip vozila, ali može pripadati i više tipova vozila. 
+   Tip vozila može biti jedne i samo jedne kategorije. Svaka kategorija vozila jedinstveno se identifikuje 
+   pomoću svog naziva. Svaki tip vozila jedinstveno se identifikuje pomoću svoje šifre i naziva kategorije 
+   kojoj tip vozila pripada. Moguće kategorije su A, B, C, D, E.
+
+· Tipu vozila može pripadati više motornih vozila, a mora bar jedno. Svako motorno vozilo jedinstveno se
+   identifikuje preko svog registarskog broja i šifre tipa vozila kojem pripada.
+
+· Učenik može uzeti časove za jednu ili više kategorija vozila. Učenik je jedinstveno identifikovan 
+   svoijm matičnim brojem.
+
+· Instruktor može držati obuku za jednu ili više kategorija vozila. Za neku kategoriju vozila može biti 
+   više instruktora, ali mora biti najmanje jedan.
+
+· Kod nekog instruktora koji drži obuku za neku kategoriju vozila može se obučavati više učenika koji 
+   treba da polažu za tu kategoriju vozila, a ne mora nijedan.
+
+· Učenik koji uzima časove za neku kategoriju vozila može biti obučavan od strane jednog i samo jednog 
+   instruktora vožnje koji drži obuku za tu kategoriju vozila.
+
+· Instruktor vоžnje za obuku za neku kategoriju vozila može koristiti više motornih vozila koja pripadaju 
+   toj kategoriji, pri čemu mora da koristi najmanje jedno vozilo.
+
+· Vozilo koje pripada nekoj kategoriji može biti korišteno od strane više instruktora vožnje koji drže 
+   obuku za tu kategoriju vozila.
+
+· Administrativac može upisati više učenika na obuku za neku kategoriju vozila, a ne mora nijednog.
+
+· Učenik koji se obučava za neku kategoriju vozila, može biti upisan od strane jednog i samo jednog administrativca.
+
+IMEZ – ime zaposlenog
+
+PREZZ – prezime zaposlenog
+
+JMBGZ – jedinstveni matični
+broj zaposlenog 
+
+KATZAP – instruktor
+vožnje/administrativac/instruktor vožnje i administrativac
+
+BRVOZDOZ – broj
+vozačke dozvole instruktora vožnje
+
+NAZKAT – naziv kategorije vozila
+
+OPISKAT – opis kategorije vozila
+
+SIFTIP – šifra tipa vozila
+
+NAZTIP – naziv tipa vozila
+
+REGBROJ - registarski broj motornog vozila
+
+BRCASKAT – broj časova koje učenik ima prilikom obuke za datu
+kategoriju vozila
+
+CENAKAT – cena obuke učenika za datu kategoriju vozila 
+
+JMBGU – jedinstveni matični broj učenika
+
+IMEU – ime učenika 
+
+PREZU – prezime učenika
+
+DATPOC – datum početka obuke učenika za datu kategoriju vozila
+kod datog instruktora

@@ -1,0 +1,10 @@
+insert into nabavka values (1, 'P2','D1',500);
+insert into nabavka values (3, 'P1','D1',300);
+insert into nabavka values (1, 'P2','D2',400);
+insert into nabavka values (3, 'P3','D2',350);
+insert into nabavka values (3, 'P2','D3',2000);
+insert into nabavka values (2, 'P1','D1',1200);
+insert into nabavka values (4, 'P1','D5',500);
+insert into nabavka values (5, 'P3','D1',750);
+insert into nabavka values (4, 'P1','D1',200);
+commit;
